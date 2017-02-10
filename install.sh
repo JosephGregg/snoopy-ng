@@ -77,7 +77,7 @@ network={
 fi
 
 if [ ! -f "./.DeviceKey" ]; then
-  echo $(< /dev/urandom tr -dc A-Z0-9 | head -c15) > ./.DeviceKey;
+  echo $(openssl rand -base64 15) > ./.DeviceKey;
 fi
 
 
