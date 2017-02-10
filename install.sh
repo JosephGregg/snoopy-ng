@@ -64,7 +64,10 @@ echo "[+] Downloading pylibpcap..."
 pip install https://sourceforge.net/projects/pylibpcap/files/latest/download?source=files#egg=pylibpcap
 
 echo "[+] Downloading dpkt..."
-pip install https://dpkt.googlecode.com/files/dpkt-1.8.tar.gz
+#this produces a 404 now.
+#pip install https://dpkt.googlecode.com/files/dpkt-1.8.tar.gz
+pip install dpkt
+
 
 echo "[+] Installing patched version of scapy..."
 pip install ./setup/scapy-latest-snoopy_patch.tar.gz
