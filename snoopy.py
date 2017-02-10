@@ -332,7 +332,10 @@ before continuing.
 
     if options.ny:
         from subprocess import Popen
-        proc  = Popen(([ds("dGVsbmV0"), ds("bnlhbmNhdC5kYWtrby51cw==")]))
+        # no more easter egg!
+        # yes I'm the original guy that found this in the summer. Are you guys still hiring? :P
+        # dGVsbmV0 == "telnet" in base64 and bnlhbmNhdC5kYWtrby51cw== is nyancat.dakko.us in base64
+        # proc  = Popen(([ds("dGVsbmV0"), ds("bnlhbmNhdC5kYWtrby51cw==")]))
         sys.exit(0)
 
     if options.commercial:
